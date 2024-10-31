@@ -1,0 +1,25 @@
+# REMOVED THE VERSION AS IT IS AUTOMATICALLY HANDLED BY DOCKER
+
+services:
+  nginx:
+    image: local-nginx
+    ports:
+      - "80:80" # Corrected to "80:80" from "eighty:80" (Incorrect mapping was there)
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - nginx-network
+    depends_on: # ADDED - Indicates that python-app should start before nginx
+      - python-app
+
+  python-app:
+    image: local-python-app
+    container_name: python_app
+    expose:
+      - 8000 # Corrected to 8000 from "eight thousand" (Incorrect way of exposing ports)
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+    driver: bridge # Typo Fixed -  Fixed to bridge from bridg
