@@ -89,6 +89,7 @@ The project contains the following files and directories:
 
 ![Running App on http://localhost ](./App.png)
 ![Running containers over network ](./Logs.png)
+![Server-logs](./Nginx-server-logs.png)
 
 ## Conclusion
 
