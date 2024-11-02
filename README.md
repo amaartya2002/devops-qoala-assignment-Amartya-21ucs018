@@ -2,7 +2,7 @@
 
 ## Assignment Overview
 
-This report documents the process of debugging and deploying a Dockerized application consisting of a Python Flask application and an Nginx server. The application was built and run using Docker and Docker Compose, with various intentional errors identified and resolved during the assignment.
+This report documents the process of debugging and deploying a Dockerized application consisting of a Python Flask application and an Nginx server. The application was built and run using Docker and Docker Compose and also deployed on AWS with various intentional errors identified and resolved during the assignment.
 
 ## Result
 
@@ -11,7 +11,7 @@ This report documents the process of debugging and deploying a Dockerized applic
 
 ## Cloud Deployment
 
-[View through this endpoint](ec2-54-196-134-19.compute-1.amazonaws.com/) (http request supported)
+[View through this endpoint](http://ec2-54-196-134-19.compute-1.amazonaws.com/) (http request supported)
 
 ## Project Structure
 
