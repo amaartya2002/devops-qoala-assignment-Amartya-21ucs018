@@ -4,6 +4,15 @@
 
 This report documents the process of debugging and deploying a Dockerized application consisting of a Python Flask application and an Nginx server. The application was built and run using Docker and Docker Compose, with various intentional errors identified and resolved during the assignment.
 
+## Result
+
+![Running App on http://localhost ](./App.png)
+![Server-logs](./Nginx-server-logs.png)
+
+## Cloud Deployment
+
+[View through this endpoint](ec2-54-196-134-19.compute-1.amazonaws.com/) (http request supported)
+
 ## Project Structure
 
 The project contains the following files and directories:
@@ -84,12 +93,6 @@ The project contains the following files and directories:
 1. **Docker Image Not Found**: Errors related to pulling images that did not exist were fixed by verifying and correcting image names in the Dockerfiles.
 2. **YAML Validation Errors**: Addressed configuration errors in the Docker Compose file, such as removing unsupported options.
 3. **Service Startup Failures**: Fixed dependencies to ensure the Nginx service could start correctly after the Python application was running.
-
-## Result
-
-![Running App on http://localhost ](./App.png)
-![Running containers over network ](./Logs.png)
-![Server-logs](./Nginx-server-logs.png)
 
 ## Conclusion
 
